@@ -1,6 +1,9 @@
+<<<<<<< HEAD
 import "./App.css";
 import header from "./components/header";
 
+=======
+>>>>>>> main
 function App() {
   const saludo = "Hola Mundo";
   return (
