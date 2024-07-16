@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 const headerStyle = {
   textAlign: "center",
   backgroundColor: "black",
@@ -22,6 +23,10 @@ function Header() {
     <div style={headerStyle}>
       <h1 style={titleStyle}>{titulo}</h1>
       <p style={subtitleStyle}>Desarrollo Web</p>
+      <Link to="/" style={{ marginRight: "10px" }}>
+        Servicios
+      </Link>
+      <Link to="contact">Contacto</Link>
     </div>
   );
 }
