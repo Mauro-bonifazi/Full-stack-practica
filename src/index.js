@@ -1,19 +1,17 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import AdivinaComponents from "./components/AdivinaComponents";
+import Usestate from "./components/Usestate";
+import { BrowserRouter } from "react-router-dom";
+
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
-import Services from "./components/Services";
-import Contact from "./components/Contact";
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <React.StrictMode>
-    <Header />
-    <Services></Services>
-    <Contact />
-    <Footer></Footer>
-  </React.StrictMode>
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>
 );
 
 // If you want to start measuring performance in your app, pass a function

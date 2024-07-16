@@ -1,9 +1,19 @@
+import { Route, Routes } from "react-router-dom";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
+import Services from "./pages/Services";
+import Contact from "./pages/Contact";
+import Page404 from "./pages/Page404";
 function App() {
-  const saludo = "Hola Mundo";
   return (
-    <div className="App">
-      <h1>{saludo}</h1>
-      <p>Mi nueva aplicación de React en funcionamiento</p>
+    <div>
+      <Header></Header>
+      <Routes>
+        <Route path="/" element={<Services />}></Route>
+        <Route path="Contact" element={<Contact></Contact>}></Route>
+        <Route path="*" element={<Page404></Page404>}></Route>
+      </Routes>
+      <Footer></Footer>
     </div>
   );
 }
