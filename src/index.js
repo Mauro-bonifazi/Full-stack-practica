@@ -1,5 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import AdivinaComponents from "./components/AdivinaComponents";
+import Usestate from "./components/Usestate";
 
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
@@ -7,6 +9,8 @@ import reportWebVitals from "./reportWebVitals";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
+    <AdivinaComponents />
+    <Usestate />
     <App />
   </React.StrictMode>
 );
